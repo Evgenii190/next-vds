@@ -1,0 +1,235 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.header__top_logo {
+    margin-right: 30px !important;
+    max-height: 110px !important;
+}
+
+.header__nav_list {
+    display: flex;
+}
+
+.header__nav_item {
+    list-style: none;
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-right: 56px;
+}
+
+.header__nav_item a {
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: "Mont-Semi";
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.header__nav_item:last-child {
+    margin-right: 0;
+}
+
+.header__top_tel {
+    text-align: right;
+    margin-left: 60px;
+}
+
+.header__top_tel a {
+    font-family: "Mont-Regular";
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.header__top_tel p {
+    font-family: "Mont-Regular";
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffc274;
+}
+
+.header__top_tel a:before {
+    content: url("/images/tel.png");
+    margin-right: 10px;
+}
+
+.header__top_mobile {
+    margin-right: 20px;
+}
+
+.header__top_mobile__margin {
+    margin-right: 0;
+}
+
+.header__top_cirlce {
+    width: 50px;
+    margin-left: 30px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    background-color: #fff;
+}
+
+.header__top_tel__mobile {
+    display: none;
+}
+
+.header__top_menu__mobile {
+    display: none;
+}
+
+.header__basket_count {
+    position: absolute;
+    top: -12px;
+    right: -4px;
+    background: #ffc274;
+    height: 27px;
+    width: 27px;
+    font-size: 13px;
+    line-height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: "Mont-Bold";
+}
+
+.header__bottom {
+    margin-top: 25px;
+    height: 65px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+    .header__bottom {
+        display: none;
+    }
+    .header {
+        padding-bottom: 120px;
+    }
+
+    .header__subtitle_inner {
+        margin-left: 0;
+    }
+
+    .header__top_nav {
+        display: none;
+    }
+    .header__top_tel {
+        display: none;
+    }
+
+    .header__top_mobile {
+        display: flex;
+    }
+
+    .header__top_tel__mobile {
+        display: flex;
+    }
+
+    .header__top_menu__mobile {
+        display: flex;
+    }
+    .header__subtitle_dots {
+        display: none;
+    }
+
+    .header__title {
+        text-align: center;
+        font-size: 48px;
+        margin-top: 30px;
+    }
+
+    .header__subtitle_inner {
+        text-align: center;
+    }
+
+    .header__subtitle {
+        text-align: center;
+        display: block;
+        margin-top: 30px;
+    }
+
+    .header__subtitle_text {
+        text-align: center;
+    }
+
+    .header__subtitle_btn {
+        margin: 0 auto;
+        margin-top: 60px;
+    }
+    .header__info {
+        position: static;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .header__info_item {
+        width: 300px;
+    }
+}
+
+@media (max-width: 670px) {
+    .header__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__info_item:first-child {
+        margin-bottom: 20px;
+    }
+
+    .header__title {
+        font-size: 36px;
+    }
+
+    .header__subtitle_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__top_logo {
+        margin-right: 0px;
+    }
+
+    .header__top_cirlce {
+        margin-left: 10px;
+    }
+
+    .header__top_tel__mobile {
+        display: none;
+    }
+
+    .header__subtitle_btn {
+        width: 260px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 365px) {
+    .header__info_item {
+        width: 280px;
+    }
+
+    .header__title {
+        font-size: 31px;
+    }
+}

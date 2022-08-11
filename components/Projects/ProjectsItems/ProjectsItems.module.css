@@ -1,0 +1,22 @@
+.jobs__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nothing {
+    font-family: "Berling";
+    font-size: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    line-height: 48px;
+    text-align: center;
+    color: #1f1a17;
+}
+
+@media (max-width: 1200px) {
+    .jobs__items {
+        justify-content: center;
+    }
+}

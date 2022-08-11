@@ -1,0 +1,42 @@
+.range__input {
+    background: #392e30;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 100px;
+    height: 32px;
+    font-family: "Mont-Semi";
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: #ffffff;
+    padding: 4px 12px;
+}
+
+.range__values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.range {
+    margin-top: 16px;
+}
+
+.range__input:focus {
+    outline: none;
+}
+
+.range__value {
+    position: relative;
+}
+
+.range__value p {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    font-family: "Mont-Semi";
+    font-size: 12px;
+    line-height: 24px;
+    color: #98928b;
+}
+

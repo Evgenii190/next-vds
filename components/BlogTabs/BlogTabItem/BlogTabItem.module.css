@@ -1,0 +1,38 @@
+.blog__tab {
+    border: 1px solid #cabfbf;
+    box-shadow: inset 0px -5px 7px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    width: 215px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #25211d;
+    cursor: pointer;
+    margin-bottom: 18px !important;
+}
+
+.blog__tab:last-child {
+    margin-bottom: 0;
+}
+
+.blog__tab__active {
+    background: linear-gradient(95.43deg, #ffb56c 3.35%, #eb7a2e 98.48%);
+    box-shadow: inset 0px -5px 7px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "Mont-Bold";
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 920px) {
+    .blog__tab {
+        text-align: center;
+        margin: 5px;
+    }
+}

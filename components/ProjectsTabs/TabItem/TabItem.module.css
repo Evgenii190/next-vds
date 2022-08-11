@@ -1,0 +1,25 @@
+.jobs__tab {
+    width: 232px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #e3dacf;
+    font-family: "Berling-Regular";
+    font-size: 20px;
+    line-height: 32px;
+    cursor: pointer;
+    color: #1f1a17;
+}
+
+.jobs__tab__active {
+    background: linear-gradient(95.43deg, #ffb56c 3.35%, #eb7a2e 98.48%);
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .jobs__tab {
+        margin: 5px;
+    }
+}

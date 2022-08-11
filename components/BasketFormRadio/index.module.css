@@ -1,0 +1,8 @@
+.radio__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio__item {
+    margin-right: 32px;
+}

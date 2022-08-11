@@ -1,0 +1,468 @@
+.card__layout {
+    background-image: url("/images/catalog-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog__link {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.catalog__link_text {
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.catalog__link_text::after {
+    content: "/";
+    margin: 0 16px;
+    color: #98928b;
+}
+
+.catalog__link_text__gray {
+    content: "/";
+    font-family: "Mont-Semi";
+    font-size: 14px;
+    line-height: 24px;
+    color: #98928b;
+}
+
+.card {
+    display: flex;
+}
+
+.card__slider {
+    max-width: 564px;
+    /* max-height: 446px; */
+    /* height: 100%; */
+    /* width: 100%; */
+    margin-right: 40px;
+}
+
+.card__slider_photo img {
+    height: 100%;
+    width: 100%;
+    max-width: 564px;
+    max-height: 446px;
+}
+
+.card__title {
+    font-family: "Berling";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.card__text {
+    font-family: "Mont-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #98928b;
+    max-width: 535px;
+}
+
+.card__tabs {
+    display: flex;
+    width: 100%;
+}
+
+.card__tab {
+    width: 50%;
+    height: 60px;
+    background: #392e30;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.card__tab:first-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card__tab p {
+    font-family: "Mont-Bold";
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.card__tab:hover {
+    background: #ffc274;
+}
+
+.card__tab:hover p {
+    color: #1f1a17;
+}
+
+.card__item_characteristics {
+    margin-top: 16px;
+}
+
+.card__item_characteristic {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.card__item_characteristic__none {
+    display: none;
+}
+
+.card__characteristic_left {
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #98928b;
+}
+
+.card__characteristic_right {
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.card__content {
+    width: 100%;
+}
+
+.card__content__text {
+    max-width: 550px;
+    margin-top: 16px;
+    font-family: "Mont-Regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #98928b;
+}
+
+.card__button_characteristic {
+    margin-top: 16px;
+}
+
+.card__button_characteristic span {
+    cursor: pointer;
+    font-family: "Mont-Bold";
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #ffc274;
+}
+
+.card__order {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.card__price {
+    font-family: "Berling";
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffc274;
+    margin-right: 20px;
+}
+
+.card__discount {
+    font-family: "Berling";
+    font-size: 20px;
+    line-height: 28px;
+    color: #8f8f8f;
+    position: relative;
+}
+
+.card__discount::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #b33232;
+    left: 0px;
+    top: calc(50% - 1px);
+}
+
+.card__tab__active {
+    background: #ffc274;
+}
+
+.card__tab__active p {
+    color: #1f1a17;
+}
+
+.card__button_basket {
+    background: linear-gradient(95.43deg, #ffb56c 3.35%, #eb7a2e 98.48%),
+        #847266;
+    border-radius: 4px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #1f1a17;
+    margin-right: 25px;
+}
+
+.card__button_buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #847266;
+    border-radius: 4px;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.card__buttons {
+    display: flex;
+    margin-top: 25px;
+}
+
+.card__button_basket::before {
+    content: url("/images/buy-icon.png");
+    margin-right: 10px;
+}
+
+.benefit__item {
+    background: #33292b;
+    border-radius: 8px;
+    max-width: 270px;
+    width: 100%;
+    padding-top: 24px;
+    margin: 10px;
+    padding-left: 24px;
+    margin-bottom: 40px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    flex-wrap: wrap;
+}
+
+.benefits__padding {
+    padding-bottom: 120px;
+}
+
+.benefit__item_title {
+    margin-top: 12px;
+    font-family: "Berling";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.benefit__item_text {
+    font-family: "Mont-Regular";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 12px;
+    max-width: 210px;
+    padding-bottom: 30px;
+    color: #98928b;
+}
+
+.other__title {
+    font-family: "Berling";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 48px;
+    padding-bottom: 40px;
+    padding-top: 160px;
+    color: #ffffff;
+}
+
+.other__item {
+    background: #33292b;
+    border-radius: 8px;
+    max-width: 272px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+    margin-bottom: 40px;
+}
+
+.other__item_img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.other__item_img img {
+    min-width: 240px;
+    min-height: 160px;
+    max-width: 240px;
+    max-height: 160px;
+}
+
+.other__item_title {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 4px;
+}
+
+.other__item_title a {
+    font-family: "Berling";
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.other__item_code {
+    font-family: "Mont-Semi";
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: #98928b;
+}
+
+.other__item_price {
+    font-family: "Berlings";
+    font-size: 22px;
+    line-height: 28px;
+    color: #ffc274;
+}
+
+.other__item_btn {
+    background: #847266;
+    border-radius: 4px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Mont-Bold";
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.card__slider__inner {
+    max-height: 610px;
+}
+
+.card__slider_small {
+    max-width: 564px;
+    max-height: 140px;
+}
+
+.card__slider_small img {
+    max-width: 180px;
+    max-height: 140px;
+    height: 100%;
+    width: 100%;
+}
+
+.other__item_btn::before {
+    content: url("/images/catalog-basket.png");
+    margin-right: 10px;
+}
+
+.other__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 110px;
+}
+
+@media (max-width: 1240px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .catalog__link {
+        margin-left: 10px;
+    }
+
+    .card__slider {
+        margin-right: 0;
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .card__content {
+        padding: 10px;
+    }
+
+    .other__title {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1180px) {
+    .other__title {
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .other__items {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 885px) {
+    .benefits {
+        justify-content: center;
+    }
+
+    .other__title {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card__buttons {
+        flex-direction: column;
+    }
+
+    .card__button_buy {
+        height: 60px;
+        margin-top: 15px;
+    }
+
+    .other__title {
+        font-size: 26px;
+    }
+}

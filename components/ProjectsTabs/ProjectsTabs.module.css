@@ -1,0 +1,12 @@
+.jobs__tabs {
+    display: flex;
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1200px) {
+    .jobs__tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

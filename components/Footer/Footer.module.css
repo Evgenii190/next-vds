@@ -1,0 +1,151 @@
+.footer__links_columns {
+    margin-top: 56px;
+    display: flex;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.footer__links_column:last-child {
+    margin-right: 30px;
+}
+
+.footer__links_column:first-child {
+    margin-left: 30px;
+}
+
+.footer__links_column {
+    margin-right: 120px;
+}
+
+.footer__links_title {
+    font-family: "Berling";
+    font-size: 24px;
+    line-height: 32px;
+    color: #1f1a17;
+    margin-bottom: 16px;
+}
+
+.footer__links_column p {
+    font-family: "Mont-Regular";
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #98928b;
+    margin-bottom: 8px;
+}
+
+.footer__bottom {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.footer__left_text {
+    margin-left: 25px;
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 22px;
+    color: #98928b;
+}
+
+.footer__right {
+    text-align: right;
+}
+
+.footer__right_tel {
+    font-family: "Mont-Bold";
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 22px;
+    color: #1f1a17;
+}
+
+.footer__right_tel::before {
+    content: url("/images/footer-call.png");
+    position: relative;
+    left: -10px;
+}
+
+.footer__right_call {
+    font-family: "Mont-Semi";
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #e28a4a;
+}
+
+@media (max-width: 1250px) {
+    .footer__links_columns {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 1160px) {
+    .footer__links_column {
+        margin-right: 0;
+    }
+
+    .footer__links_columns {
+        justify-content: space-between;
+    }
+
+    .footer__bottom {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer__links_column p {
+        display: none;
+    }
+
+    .footer__links_title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .footer__left_text {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__links_columns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__right_call {
+        display: none;
+    }
+
+    .footer__links_column {
+        margin: 0 !important;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 365px) {
+    .footer__right_tel::before {
+        display: none;
+    }
+
+    .footer__right_tel {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,237 @@
+.jobs {
+    background-color: #f3ede6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jobs__title {
+    font-family: "Berling";
+    font-size: 40px;
+    padding-top: 115px;
+    line-height: 48px;
+    text-align: center;
+    color: #1f1a17;
+}
+
+.jobs__tabs {
+    display: flex;
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+.jobs__tab {
+    width: 232px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid #e3dacf;
+    font-family: "Berling-Regular";
+    font-size: 20px;
+    line-height: 32px;
+    color: #1f1a17;
+}
+
+.jobs__tab__active {
+    background: linear-gradient(95.43deg, #ffb56c 3.35%, #eb7a2e 98.48%);
+    color: #fff;
+}
+
+.job__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 32%;
+    margin-bottom: 25px;
+    border: 1px solid #e3dacf;
+    border-radius: 8px;
+}
+
+.job__item:hover .job__btn {
+    background: linear-gradient(95.43deg, #ffb56c 3.35%, #eb7a2e 98.48%);
+}
+
+.job__item:hover .job__btn p {
+    font-family: "Mont-Bold";
+    color: #1f1a17;
+}
+
+.job__item_img {
+    padding: 8px;
+}
+
+.job__info {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.job__title {
+    font-family: "Berling";
+    margin-top: 12px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1f1a17;
+}
+
+.job__text_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.job__text_left {
+    font-family: "Mont-Regular";
+    font-size: 14px;
+    line-height: 24px;
+    color: #98928b;
+}
+
+.job__text_right {
+    font-family: "Mont-Semi";
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1a17;
+}
+
+.job__dots {
+    border-bottom: 2px dotted #98928b;
+    flex: 1 1 0;
+    margin: 0 8px;
+    position: relative;
+    opacity: 0.3;
+    top: -7px;
+}
+
+.job__price {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.job__price p {
+    font-family: "Berling";
+    font-size: 20px;
+    line-height: 28px;
+    color: #e28a4a;
+}
+
+.job__descr {
+    font-family: "Mont-Regular";
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #98928b;
+    margin-bottom: 24px;
+    max-width: 320px;
+}
+
+.job__btn {
+    background: #847266;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #e3dacf;
+    border-radius: 0px 0px 8px 8px;
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 70px;
+}
+
+.job__btn p {
+    font-family: "Mont-Semi";
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.jobs__more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs__more p {
+    font-family: "Mont-Semi";
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 15px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #e28a4a;
+}
+
+@media (max-width: 1200px) {
+    .job__item {
+        margin: 6px;
+    }
+
+    .jobs__tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .jobs__tab {
+        margin: 5px;
+    }
+
+    .jobs__more {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .job__title {
+        font-size: 22px;
+    }
+
+    .job__descr {
+        font-size: 11px;
+    }
+
+    .job__btn p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .job__item {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 430px) {
+    .job__item img:first-child {
+        width: 100%;
+    }
+
+    .job__title {
+        font-size: 22px;
+    }
+
+    .job__btn p {
+        font-size: 16px;
+    }
+
+    .job__info {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .job__btn {
+        padding-left: 25px;
+    }
+}
+
+@media (max-width: 365px) {
+    .job__btn p {
+        font-size: 15px;
+    }
+}

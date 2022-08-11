@@ -1,0 +1,128 @@
+.header__portfolio {
+    background-image: url("/images/portfolio-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 125px;
+}
+
+.portfolio__title {
+    font-family: "Berling";
+    font-size: 64px;
+    line-height: 77px;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-bottom: 12px;
+}
+
+.portfolio__text {
+    font-family: "Mont-Regular";
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    margin-top: 24px;
+}
+
+.portfolio__text span {
+    font-family: "Mont-Bold";
+}
+
+.jobs__portfolio {
+    padding-top: 35px;
+    margin-top: 0;
+}
+
+.header__subtitle_dot {
+    margin-left: 8px;
+}
+
+.header__subtitle_dot:first-child {
+    margin-left: 0;
+}
+
+.header__subtitle_dots__light {
+    opacity: 0.1;
+}
+
+.header__subtitle_dots__middle {
+    opacity: 0.4;
+}
+
+@media (max-width: 1250px) {
+    .portfolio__title {
+        margin-left: 50px;
+    }
+
+    .header__subtitle-dots {
+        margin-left: 50px;
+    }
+
+    .portfolio__text {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .portfolio__title {
+        font-size: 56px;
+    }
+
+    .portfolio__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio__title {
+        font-size: 56px;
+        margin-left: 25px;
+    }
+
+    .portfolio__text {
+        font-size: 14px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 460px) {
+    .portfolio__title {
+        font-size: 50px;
+        margin-right: 20px;
+    }
+
+    .portfolio__text br {
+        display: none;
+    }
+
+    .portfolio__text {
+        font-size: 13px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .portfolio__title {
+        font-size: 42px;
+        margin-top: 40px;
+    }
+
+    .portfolio__text {
+        font-size: 12px;
+        margin-right: 20px;
+    }
+
+    .header__portfolio {
+        padding-bottom: 80px;
+    }
+}
+
+@media (max-width: 350px) {
+    .portfolio__title {
+        font-size: 38px;
+        margin-bottom: 0;
+    }
+
+    .portfolio__text {
+        margin-top: 10px;
+    }
+}

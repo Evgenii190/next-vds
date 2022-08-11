@@ -1,0 +1,111 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Mont-Regular";
+    src: url("/fonts/Mont-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mont-Bold";
+    src: url("/fonts/Mont-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Mont-Semi";
+    src: url("/fonts/Mont-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Berling-Semi";
+    src: url("/fonts/BerlingskeSerif-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Berling-Regular";
+    src: url("/fonts/BerlingskeSerif-Md.ttf");
+}
+
+@font-face {
+    font-family: "Berling";
+    src: url("/fonts/BerlingskeSerif-Lt.ttf");
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mont-Regular";
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+img {
+    pointer-events: none;
+}
+
+.dots {
+    border-bottom: 2px dotted #98928b;
+    flex: 1 1;
+    margin: 0 8px;
+    position: relative;
+    opacity: 0.1;
+    top: -7px;
+}
+
+.other__discount {
+    position: absolute;
+    top: 0;
+    left: 8px;
+}
+
+.rc-slider-track {
+    height: 1px !important;
+    background-color: #fff !important;
+    opacity: 0.1;
+}
+
+.other__discount img {
+    min-width: auto !important;
+    min-height: auto !important;
+    width: 56px;
+    height: 48px;
+}
+
+.other__discount p {
+    text-align: center;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    font-family: "Berling";
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.rc-slider-handle {
+    opacity: 1 !important;
+}
+
+.rc-slider-track-1 {
+    opacity: 1;
+    background-color: #ffc274 !important;
+}
